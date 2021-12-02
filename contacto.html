@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<div class="header">
+			<a href="index.html" class="logo"><img src="assets/logopag.png" alt="logo"></a>
+			<ul class="nav">
+				<li><a href="about.html">Quienes somos</a></li>
+				<li><a href="index.html#seccionEventos">Eventos</a></li>
+				<li><a href="galeria.html">Galería</a></li>
+				<li class="active"><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+
+		<div id="contenedorContacto">
+			<div class="titulo">Contactanos</div>
+			<div class="formulario">
+				<form action="" method="POST" enctype="multipart/form-data">
+					<label class="label" for="nombre">Nombre</label>
+					<input class="input" type="text" name="nombre">
+					<label class="label" for="apellido">Apellido</label>
+					<input class="input" type="text" name="apellido">
+					<label class="label" for="email">E-Mail</label>
+					<input class="input" type="email" name="email">
+					<label class="label" for="pais">País</label>
+					<select class="select" name="pais">
+						<option value="argentina">Argentina</option>
+						<option value="peru">Perú</option>
+						<option value="chile">Chile</option>
+						<option value="colombia">Colombia</option>
+						<option value="mexico">México</option>
+					</select>
+					<label class="label" for="mensaje">Dejanos tu consulta</label>
+					<textarea class="mensaje" name="mensaje"></textarea>
+					<div>
+						<input class="sub" type="checkbox" name="suscripcion">
+						<label class="subb" for="suscripcion">Deseo suscribirme al newsletter</label>
+					</div>
+					<input class="enviar" type="button" name="enviar" value="ENVIAR">
+				</form>
+			</div>
+			<div class="infoContacto">
+				<img src="assets/logopag.png">
+				<div class="datos">
+					<p>Teléfono: 99999999</p>
+					<p>E-Mail: info@blablabla.com</p>
+					<p>Instagram: @blablabla</p>
+					<p>Facebook: @blablabla</p>
+					<p>Twitter: @blablabla</p>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
