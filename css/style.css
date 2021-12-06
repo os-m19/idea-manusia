@@ -32,8 +32,13 @@ body{
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 100%;
+	border-radius: 0 0 25px 25px;
+	transition: all 200ms ease-in-out;
 }
 
+.header .navBar:hover{
+	background-color: rgba(0, 0, 0, 1.0);
+}
 
 .header .logo{
 	flex-basis: 120px;
@@ -48,7 +53,6 @@ body{
 	margin-right: 25px;
 	font-size: 1.3rem;
 	font-weight: 400;
-
 }
 
 .header .navBar .logo img{
@@ -63,6 +67,10 @@ body{
 	text-decoration: none;
 	color: #fff;
 	padding: 0 25px;
+}
+
+.header .menu a:hover{
+	text-shadow: -1px -1px 1px #ccc;
 }
 
 .header .menu .active a{
@@ -181,12 +189,19 @@ body{
 .gridEventos .evento{
 	border-radius: 2rem;
 	min-height: 200px;
-	background-color: gray;
+	background-color: #4158D0;
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 	padding: 2rem;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
+	transition: all 150ms ease-in-out;
+}
+
+.gridEventos .evento:hover{
+	box-shadow: 0 0 5px 0 #FFF;
+	transform: scale(1.02);
 }
 
 .gridEventos .evento .fecha{
