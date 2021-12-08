@@ -2,43 +2,112 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Galeria</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  	/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Mi página</title>
 </head>
 <body>
-	<div class="header">
-		<div class="navBar fixContent">
-			<a href="./index.html" class="logo"><img src="./assets/logopag.png" alt="logo"></a>
-			<ul class="menu">
-				<li><a href="./about.html">Quienes somos</a></li>
-				<li><a href="./index.html#seccionEventos">Eventos</a></li>
-				<li class="active"><a href="galeria.html">Galería</a></li>
-				<li><a href="./contacto.html">Contacto</a></li>
-			</ul>
+	<nav id=header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand ms-md-3" href="index.html">
+				<img srcset="./assets/logopagmb.png" src="./assets/logopag.png" alt="logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav row flex-grow-1 justify-content-end me-lg-3">
+					<li class="nav-item col-12 col-lg-1 my-2 mx-lg-3 d-flex justify-content-center">
+						<a class="nav-link" href="./about.html">Nosotros</a>
+					</li>
+					<li class="nav-item col-12 col-lg-1 my-2 mx-lg-3 d-flex justify-content-center">
+						<a class="nav-link" href="./index.html#seccionEventos">Eventos</a>
+					</li>
+					<li class="nav-item col-12 col-lg-1 my-2 mx-lg-3 d-flex justify-content-center">
+						<a class="nav-link active" href="./galeria.html">Galería</a>
+					</li>
+					<li class="nav-item col-12 col-lg-1 my-2 mx-lg-3 d-flex justify-content-center">
+						<a class="nav-link" href="./contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
+	</nav>
 
-	<div class="contenedorGaleria">
-		<div class="titulo">Galería</div>
-		<div class="galeria">
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto1.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto2.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto3.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto4.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto5.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto6.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto1.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto2.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto3.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto4.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto5.jpg"></div>
-			<div class="foto animate__animated animate__fadeIn"><img src="./assets/foto6.jpg"></div>
-		</div>
-	</div>
+<div id="galeria" class="container mt-5 pt-5">
+
+  <h1 class="fw-light text-center text-lg-start mt-5 mb-0">Galería</h1>
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-start">
+
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto1.jpg" alt="foto evento a">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto2.jpg" alt="foto evento b">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto3.jpg" alt="foto evento c">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto4.jpg" alt="foto evento d">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto5.jpg" alt="foto evento e">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto6.jpg" alt="foto evento f">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto1.jpg" alt="foto evento g">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto2.jpg" alt="foto evento h">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto3.jpg" alt="foto evento i">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto4.jpg" alt="foto evento j">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto5.jpg" alt="foto evento k">
+      </a>
+    </div>
+    <div class="fotoGaleria col-lg-3 col-md-4 col-6 py-3">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="./assets/foto6.jpg" alt="foto evento l">
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
