@@ -7,7 +7,13 @@ body{
 }
 
 
+
+
 @media all and (min-width: 1024px){
+	#header {
+		max-height: 80px;
+	}
+
 	#header .nav-link{
 		font-size: 1.1rem;
 	}
@@ -29,7 +35,7 @@ body{
 }
 
 .slogan{
-	padding-top: 5rem;
+	padding-top: 5em;
 }
 
 .slogan p{
@@ -46,7 +52,7 @@ body{
 
 @media all and (min-width: 768px){
 	.slogan{
-		padding-top: 5rem;
+		padding-top: 5em;
 	}
 
 	.slogan p{
