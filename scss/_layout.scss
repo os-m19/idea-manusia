@@ -1,0 +1,43 @@
+#header{
+	@media all and (min-width: $point-lg){
+		max-height: 80px;
+		font-size: 1.1rem;
+	}
+}
+
+#home{
+	background-image: url(../assets/imagebg2.jpg);
+	height: 50vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	display: block;
+	@media all and (min-width: $point-md){
+		height: 100vh;
+	}
+	.slogan{
+		&.sloganPosition{
+			padding-top: 5em;
+		}
+	}
+}
+
+#galeria{
+	.fotoGaleria{
+		@media all and (min-width: $point-lg){
+			transition: all 150ms ease-in-out;
+		}
+		&:hover{
+			transform: scale(1.05);
+		}
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: fill;
+		}
+	}
+}
+
+#contacto{
+	height: 100vh;
+}
