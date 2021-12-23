@@ -1,3 +1,8 @@
+@mixin size($width: 100%, $height: 100%){
+	width: $width;
+	height: $height;
+}
+
 #header{
 	@media all and (min-width: $point-lg){
 		max-height: 80px;
@@ -7,8 +12,7 @@
 
 #home{
 	background-image: url(../assets/imagebg2.jpg);
-	height: 50vh;
-	width: 100%;
+	@include size(100%, 50vh);
 	background-position: center;
 	background-size: cover;
 	display: block;
@@ -22,6 +26,13 @@
 	}
 }
 
+#seccionEventos{
+	.blackscreen{
+		@include size;
+		position: absolute;
+	}
+}
+
 #galeria{
 	.fotoGaleria{
 		@media all and (min-width: $point-lg){
@@ -31,13 +42,12 @@
 			transform: scale(1.05);
 		}
 		img{
-			width: 100%;
-			height: 100%;
+			@include size;
 			object-fit: fill;
 		}
 	}
 }
 
 #contacto{
-	height: 100vh;
+	@include size(auto, 100vh)
 }

@@ -5,8 +5,13 @@ body{
 	color: #fff;
 }
 
+@each $k, $v in $font-weight{
+	.font-weight-#{$k}{
+		font-weight: $v;
+	}
+}
+
 .titulo{
-	font-weight: 900;
 	font-size: 2rem;
 	text-transform: uppercase;
 	@media all and (min-width: $point-md){
@@ -19,30 +24,38 @@ body{
 		text-transform: uppercase;
 		font-size: 1.5rem;
 		line-height: 1.5rem;
-		font-weight: 900;
 		text-shadow: -1px -1px 5px #000000;
 		@media all and (min-width: $point-md){
 			font-size: 5rem;
-			font-weight: 900;
 			line-height: 80px;
 		}
 	}
 }
 
-.tituloEvento{
-	font-weight: 700;
-	font-size: 1.5rem;
-	@media all and (min-width: $point-md){
+#seccionEventos{
+	.tituloEvento{
 		font-size: 2rem;
+		}
+
+
+	.fechaEvento{
+		h3{
+			font-size: 1.2rem;
+		}
+	}
+	.infoEvento{
+		p{
+			@extend h3;
+			padding-top: 1.2em;
+		}
 	}
 }
 
 #contacto{
 	.datos{
-		font-weight: 700;
+		font-weight: map-get($font-weight, bold);
 		@media all and (min-width: 768px){
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 		}
 	}
 }
-
