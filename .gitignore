@@ -34,4 +34,4 @@ logs
 
 #Git
 
-/node_modules
+node_modules/
