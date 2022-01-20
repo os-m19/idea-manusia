@@ -2,12 +2,27 @@ body{
 	background-color: black;
 }
 
+.bgBlack{
+	background-color: black;
+}
+
 .colorChange{
 	color: $contrastColor;
 }
 
 .blackscreen{
 	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-header button{
+	background-color: transparent;
+	border: 0;
+	span{
+		color: $contrastColor;
+		&:hover{
+			color: #008FFF;
+		}
+	}
 }
 
 .btn{
@@ -24,6 +39,15 @@ body{
 		&:focus{
 			background-color: #fff !important;
 			color: #000 !important;
+		}
+	}
+	.datos a{
+		color: $contrastColor;
+		&:hover{
+			color: #008FFF;
+		}
+		@media all and (min-width: $point-lg){
+			transition: all 150ms ease-in-out;
 		}
 	}
 }

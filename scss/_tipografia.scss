@@ -32,7 +32,17 @@ body{
 	}
 }
 
+.modal-header{
+	.modal-title{
+		font-size: 1.3rem;
+	}
+	.close span{
+		font-size: 1.5rem;
+	}
+}
+
 #seccionEventos{
+
 	.tituloEvento{
 		font-size: 2rem;
 		}

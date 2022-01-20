@@ -7,16 +7,29 @@
 	@media all and (min-width: $point-lg){
 		max-height: 80px;
 		font-size: 1.1rem;
+		.navbar-brand{
+			img{
+				transition: all 150ms ease-in-out;	
+			}
+		}
+	}
+	.navbar-brand{
+		img{
+			&:hover{
+				transform: scale(1.05);
+			}
+		}
 	}
 }
 
 #home{
-	background-image: url(../assets/imagebg2.jpg);
+	background-image: url(../assets/imagebg3.jpg);
 	@include size(100%, 50vh);
 	background-position: center;
 	background-size: cover;
 	display: block;
 	@media all and (min-width: $point-md){
+		background-image: url(../assets/imagebg2.jpg);
 		height: 100vh;
 	}
 	.slogan{
@@ -49,5 +62,9 @@
 }
 
 #contacto{
-	@include size(auto, 100vh)
+	@include size(auto, 95vh)
+}
+
+footer{
+	text-align: center;
 }
